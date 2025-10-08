@@ -32,7 +32,7 @@ body {
 }
 
 .logo-img {
-    height: 40px;
+    height: 50px;
     width: auto;
     vertical-align: middle;
 }
@@ -134,7 +134,6 @@ body {
 }
 
 .section p {
-    max-width: 600px;
     margin: 0 auto 2rem;
 }
 
@@ -194,6 +193,8 @@ body {
 .contact-form label {
     text-align: left;
     font-weight: 500;
+    color: #333;
+    font-size: 1.1rem; /* Slightly larger for emphasis */
 }
 
 .contact-form input,
@@ -211,6 +212,10 @@ body {
 
 .contact-info p {
     margin: 0.5rem 0;
+    color: #333;
+    font-size: 1rem; /* Consistent size */
+    line-height: 1.4; /* Better readability */
+    text-align: center; /* Added to center-align contact info */
 }
 
 /* Buttons */
@@ -222,20 +227,14 @@ body {
     background-color: #006D87; /* Darker shade for hover consistency */
 }
 
-/* Company Details */
-.company-details {
-    max-width: 600px;
-    margin: 0 auto 2rem;
-    text-align: left;
-    background: #fff;
+/* Footer and Contact Text Improvements */
+footer {
+    background-color: rgba(0, 137, 169, 0.1); /* Subtle teal tint */
+    text-align: center;
     padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.company-details p {
-    margin: 0.5rem 0;
+    margin-top: 2rem;
     color: #333;
+    font-size: 0.9rem; /* Slightly smaller for balance */
 }
 
 /* About Content */
@@ -248,30 +247,41 @@ body {
 .about-content p {
     margin: 1rem 0;
     color: #333;
+    text-align: justify;
 }
 
-/* Company Details */
+/* Table-like company-details styling */
 .company-details {
-    max-width: 600px;
     margin: 0 auto 2rem;
-    text-align: left;
-    background: #fff;
     padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-collapse: separate;
+    border-spacing: 12px 8px; /* space between cells */
+    border: 1px solid #e6e6e6; /* light border */
+    border-radius: 6px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 700px;
+}
+
+.company-details th,
+.company-details td {
+    padding: 10px 14px;
+    text-align: left;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.company-details tr:last-child th,
+.company-details tr:last-child td {
+    border-bottom: none;
+}
+
+.company-details th {
+    background: #fafafa;
+    font-weight: 600;
 }
 
 .company-details p {
     margin: 0.5rem 0;
-    color: #333;
-}
-
-/* Footer */
-footer {
-    background-color: rgba(0, 137, 169, 0.1); /* Subtle teal tint */
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
     color: #333;
 }
 
