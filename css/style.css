@@ -285,6 +285,28 @@ footer {
     color: #333;
 }
 
+/* Social Media */
+.social-media {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.social-media a {
+    color: #0089A9; /* Teal to match theme */
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: #006D87; /* Darker teal on hover */
+}
+
+.social-media i {
+    vertical-align: middle;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .nav-links {
