@@ -3,56 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Orill Exim LLP</title>
+    <title>Contact | Orience</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/png" href="images/logo.jpg">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome CDN -->
+    <link rel="icon" type="image/png" href="images/logoWOBG.png">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation -->
     <nav class="navbar">
-        <div class="logo"><img src="images/logo.jpg" alt="Orill Exim LLP Logo" class="logo-img"></div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="contact.html" class="active">Contact Us</a></li>
-        </ul>
-        <div class="menu-toggle">☰</div>
+        <div class="container nav-inner">
+            <a class="brand brand--bold" href="index.html">
+                <img src="images/logoWOBG.png" alt="Orience Logo" class="logo-img">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" aria-label="Open menu">Menu</div>
+        </div>
     </nav>
 
-    <!-- Contact Section -->
-    <section class="section contact">
-        <h2>Contact Us</h2>
-        <p>Have questions or need a quote? We’re here to help!</p>
-        <div class="contact-form-container">
-            <form class="contact-form" action="mailto:orilleximllp@gmail.com" method="post" enctype="text/plain">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Message</label>
-                <textarea id="message" name="message" required></textarea>
-                <button type="submit" class="cta-button">Send Message</button>
-            </form>
-        </div>
-        <div class="contact-info">
-            <p><strong>Email:</strong> <a href="mailto:orilleximllp@gmail.com">orilleximllp@gmail.com</a></p>
-            <p><strong>Phone:</strong> <a href="tel:+919265120427">+91 92651 20427</a></p>
-            <p><strong>Address:</strong> Plot No G-2332/A1/1, Lodhika G.I.D.C, Gate-2, Metoda, Rajkot, Gujarat - 360021, India</p>
+    <section class="page-hero">
+        <div class="container">
+            <p class="eyebrow">Contact Us</p>
+            <h1>Let's discuss your product requirements.</h1>
+            <p>For bulk orders, distributor queries, and collaborations, our team is ready to support you with quick response and clear pricing.</p>
         </div>
     </section>
 
-    <!-- Footer -->
+    <section class="section">
+        <div class="container contact-layout">
+            <div class="contact-form-container">
+                <h2>Send an Inquiry</h2>
+                <form class="contact-form" action="mailto:orilleximllp@gmail.com" method="post" enctype="text/plain">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit" class="cta-button">Send Message</button>
+                </form>
+            </div>
+            <aside class="contact-info">
+                <h2>Direct Contact</h2>
+                <p><strong>Email:</strong> <a href="mailto:orilleximllp@gmail.com">orilleximllp@gmail.com</a></p>
+                <p><strong>Phone:</strong> <a href="tel:+919265120427">+91 92651 20427</a></p>
+                <p><strong>Address:</strong> Plot No G-2332/A1/1, Lodhika G.I.D.C, Gate-2, Metoda, Rajkot, Gujarat - 360021, India</p>
+                <p><strong>Social:</strong> Follow @orience_world and orience.tissues for latest product updates.</p>
+                <a class="cta-button secondary" href="https://www.instagram.com/orience_world/" target="_blank" rel="noreferrer">Visit Instagram</a>
+            </aside>
+        </div>
+    </section>
+
     <footer>
-        <p>&copy; 2025 Orill Exim LLP. All rights reserved.</p>
-        <div class="social-media">
-            <a href="https://www.facebook.com/orience.tissues" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com/orience_world/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <div class="container footer-inner">
+            <p>&copy; <span id="year"></span> Orill Exim LLP. All rights reserved.</p>
+            <div class="social-media">
+                <a href="https://www.facebook.com/orience.tissues" target="_blank" rel="noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/orience_world/" target="_blank" rel="noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
         </div>
     </footer>
 
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
     <script src="js/script.js"></script>
 </body>
 </html>
+
+
+

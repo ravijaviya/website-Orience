@@ -3,50 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Orience - Premium Tissue Solutions</title>
+    <title>Orience | Premium Tissue Solutions</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/png" href="images/logo.jpg">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome CDN -->
+    <link rel="icon" type="image/png" href="images/logoWOBG.png">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation -->
     <nav class="navbar">
-        <div class="logo"><img src="images/logo.jpg" alt="Orience Logo" class="logo-img"></div>
-        <ul class="nav-links">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-        <div class="menu-toggle">☰</div>
+        <div class="container nav-inner">
+            <a class="brand brand--bold" href="index.html">
+                <img src="images/logoWOBG.png" alt="Orience Logo" class="logo-img">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" aria-label="Open menu">Menu</div>
+        </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero" style="background: url('images/bath-tissue-1.jpg') no-repeat center center/cover;">
-        <div class="hero-content">
-            <h1>Premium Tissues for Every Need</h1>
-            <p>Simple. Soft. Essential. Discover Orience's eco-friendly solutions.</p>
-            <a href="products.html" class="cta-button">Explore Products</a>
+    <header class="hero" style="background-image: linear-gradient(110deg, rgba(8, 8, 11, 0.88), rgba(8, 8, 11, 0.56)), url('images/bath-tissue-1.jpg');">
+        <div class="container hero-content">
+            <p class="eyebrow">Premium Tissue Craft</p>
+            <h1>Refined tissue solutions for modern hospitality and homes.</h1>
+            <p>
+                Orience combines softness, hygiene, and design-forward presentation for businesses and families who value quality in every detail.
+                Follow us on Instagram and Facebook for product drops, packaging highlights, and new collection updates.
+            </p>
+            <div class="hero-actions">
+                <a href="products.html" class="cta-button">Explore Products</a>
+                <a href="contact.html" class="cta-button secondary">Request a Quote</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Orience</h2>
+                <p>From sourcing to finished packs, every step is managed with a premium mindset and strict quality controls.</p>
+            </div>
+            <div class="feature-grid">
+                <article class="feature-card">
+                    <h3>Softness That Lasts</h3>
+                    <p>Balanced strength and comfort suitable for daily household use and high-traffic commercial settings.</p>
+                </article>
+                <article class="feature-card">
+                    <h3>Clean Premium Finish</h3>
+                    <p>Designed for superior look and feel in hotels, events, cafes, and modern workspaces.</p>
+                </article>
+                <article class="feature-card">
+                    <h3>Reliable Bulk Supply</h3>
+                    <p>Efficient fulfillment for distributors, retailers, and institutions with dependable delivery support.</p>
+                </article>
+            </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section class="section about">
-        <h2>About Orience</h2>
-        <p>We are a leading tissue manufacturer in India, committed to quality and sustainability. Our products are crafted with care to meet your everyday needs.</p>
-        <a href="about.html" class="cta-button secondary">Learn More</a>
+    <section class="section section-alt">
+        <div class="container split-layout">
+            <article class="content-card">
+                <h2>Built for Brand-First Businesses</h2>
+                <p>
+                    We support partners who care about hygiene and presentation equally. Whether your need is for retail shelves,
+                    B2B procurement, or private label opportunities, Orience delivers consistency you can trust.
+                    Our social pages showcase real product visuals, ongoing dispatches, and fresh design ideas.
+                </p>
+                <a href="about.html" class="cta-button secondary">Know Our Story</a>
+            </article>
+            <article class="image-card">
+                <img src="images/napkins-1.jpg" alt="Orience napkins product visual">
+            </article>
+        </div>
     </section>
 
-    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Orill Exim LLP. All rights reserved.</p>
-        <div class="social-media">
-            <a href="https://www.facebook.com/orience.tissues" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com/orience_world/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <div class="container footer-inner">
+            <p>&copy; <span id="year"></span> Orill Exim LLP. All rights reserved.</p>
+            <div class="social-media">
+                <a href="https://www.facebook.com/orience.tissues" target="_blank" rel="noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/orience_world/" target="_blank" rel="noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
         </div>
     </footer>
 
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
     <script src="js/script.js"></script>
 </body>
 </html>
+
